@@ -1,0 +1,165 @@
+:root {
+    --spotify-image-blur: 4px;
+    --spotify-image-opacity: 0.45;
+    --spotify-image-hover-opacity: 0.7;
+    --order-listening: 1;
+    --order-stream: 2;
+    --order-spotify-player: 4;
+    --order-voice: 3;
+    --order-profile: 5;
+    --grabber-height: 0.4;
+}
+
+
+/* custom panel section, its realllllllllly long */
+ .panels__5e434 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--panel-gap);
+  background: var(--bg-color);
+  border: none;
+}
+
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.wrapper_e131a9,
+.container__37e49 {
+  border-radius: var(--panel-radius) !important;
+}
+
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.container_e131a9,
+.container__37e49,
+.wrapper_e131a9 {
+  background-color: var(--panel-color);
+  border: 1px solid var(--border-subtle);
+}
+
+.listeningAlong_e0cf27 { order: var(--order-listening); }
+.panel__5dec7 { 
+  order: var(--order-stream);
+  padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
+}
+
+.wrapper_e131a9 {
+  order: var(--order-voice);
+  background-color: #080a0c !important; 
+  overflow: hidden;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper_e131a9:not(:has(.container_e131a9)) { display: none; }
+.wrapper_e131a9:hover { transform: scaleY(1.3); }
+.wrapper_e131a9 > * {
+  transition: transform 0.3s ease;
+  transform-origin: bottom center;
+
+}
+.wrapper_e131a9:hover > * { transform: scaleY(calc(1 / 1.3)); }
+.wrapper_e131a9:hover .rtcConnectionStatus__06d62 { transform: translate(0, -80%) scale(0.8); }
+
+.container_e131a9 {
+  min-height: 0px;
+  position: relative;
+  padding: 0 12px;
+  height: 50px;
+  border: none;
+}
+
+.container__37e49 {
+  order: var(--order-profile);
+  min-height: 59px;
+}
+
+#vc-spotify-player {
+  order: var(--order-spotify-player);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent 0%, var(--panel-color) 100%) !important;
+  border: 1px solid transparent;
+  border-radius: var(--panel-radius);
+  margin: 0 -1px;
+  height: 48px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: height;
+  transform: translateZ(0);
+}
+
+#vc-spotify-player:hover { height: 122px; }
+
+#vc-spotify-player::before,
+#vc-spotify-player::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateZ(0);
+}
+
+#vc-spotify-player::before {
+  background: var(--vc-spotify-track-image) center/cover no-repeat;
+  opacity: var(--spotify-image-opacity);
+  filter: blur(var(--spotify-image-blur, 0px));
+}
+
+#vc-spotify-player #vc-spotify-progress-bar {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+#vc-spotify-song-title {
+  color: #cdcdec;
+}
+
+#vc-spotify-player:hover #vc-spotify-progress-bar{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+} 
+
+[class*="grabber"] {
+	height: calc(var(--grabber-size) * var(--grabber-height)) !important;
+	border-radius: 5px !important;
+	margin-top: calc((var(--grabber-size) * var(--grabber-height)) / -2 + var(--bar-offset)/2) !important;
+}
+
+.rtcConnectionStatus__06d62 {
+  transition: transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+.actionButtons_e131a9 {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  left: 38%;
+  transform: translate(-50%, 10px);
+  opacity: 0;
+  gap: 5px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.wrapper_e131a9:hover .actionButtons_e131a9 {
+  opacity: 1;
+  transform: translate(-50%, -22%);
+  pointer-events: auto;
+}
+
+.labelWrapper__06d62 > :first-child,
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark > section > div.wrapper_e131a9 > div > div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignCenter_abf706.noWrap_abf706.connection_e131a9 > div.inner_e131a9 > div > div > div > a > div > div > p {
+  display: none;
+}
+
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.sidebar__5e434.theme-dark.images-dark > section > div.wrapper_e131a9 > div > div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignCenter_abf706.noWrap_abf706.connection_e131a9 > div.inner_e131a9 > div > div > div > a > div > div {
+  font-size: 16px;
+} 

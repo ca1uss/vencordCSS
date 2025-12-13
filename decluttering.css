@@ -1,0 +1,90 @@
+:root {
+    --custom-theme-background:      #1e2731; /* primary theme color                                           */
+    --custom-theme-primary-color:   #3682df; /* influences border color, dark buttons and like thats it       */
+    --custom-theme-secondary-color: #1e2731; /* also influences border                                        */
+    
+    --customFont: 'gg sans', sans-serif;
+    --bg-color: var(--background-gradient-high, var(--background-base-lowest));
+
+    --panel-gap: 8px;
+    --panel-radius: 10px;
+    --panel-color: var(--background-gradient-highest, var(--background-base-low));
+}
+
+
+/* de nitro */
+a[data-list-item-id*="nitro"],
+a[data-list-item-id*="shop"],
+/* yes next 2 arent nitro but whatever */
+div[aria-label="Send a gift"],
+.channelAppLauncher_e6e74f {
+    display: none !important;
+}
+
+/* compact member list */
+.member__5d473 {
+    height: 32px!important;
+    margin: calc(var(--space-xxs) / .8) var(--space-xxs);
+        &:hover {
+        background: var(--bg-overlay-hover, var(--background-modifier-hover));
+    }
+}
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+.memberInner__5d473, .childContainer__91a9d {
+    padding: 0px!important;
+}
+.avatar__91a9d {
+    scale: .95;
+    margin-right: 6px;
+}
+.memberInner__5d473 {
+    position: absolute;
+    top: calc(0px - var(--space-xs) / 3);
+    left: var(--space-xxs);
+}
+.membersGroup_c8ffbb {
+    padding: var(--space-xs)!important;
+    padding-top: 3px !important ;
+}
+
+/* compact channel list */
+.unread__2ea32 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: auto;
+  right: 4px;
+  top: 16px;
+}
+
+.link__2ea32 {
+  padding-left: 16px;
+  border-radius: 0px!important;
+
+  &::before {
+    width: 1px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+  }
+
+  .icon__2ea32 {
+    scale: 0.8;
+  }
+
+  .linkTop__2ea32 {
+    gap: 4px;
+  }
+}
+.wrapper__2ea32 {
+  margin: 0px;
+}
+.name__2ea32,
+.overflow__82b15 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2857142857142858;
+}

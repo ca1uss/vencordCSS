@@ -1,0 +1,142 @@
+/* original creators are somewhere in the css-snippets channel in vencord server, i didnt do anything to these */
+
+/* solid status icons */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
+[class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
+[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
+
+/* reduce context menu padding */
+.layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
+    margin: -4px;
+    .separator_c1e9c4 {
+        margin: 1px 8px !important;
+    }
+    .wrapper_f563df {
+        padding: 2px !important;
+    }
+    .item_c1e9c4{
+        /* min-height is 32px as default, change value for desired look */
+        min-height: 32;
+        /* padding is 4px 8px as default, change value for desired look */
+        padding: 4px 8px;
+    }
+}
+
+/* Full sized gif picker */
+[class*='layerContainer_'] [class*='positionLayer__'] {
+    height: 100% !important;
+    [class*='drawerSizingWrapper__'] {
+        top: 3.5em !important;
+        height: calc(100% - 9em)
+    }
+}
+
+/* hides "new" at bottom and top of the server list */
+.unreadMentionsIndicatorBottom_ef3116,
+.unreadMentionsFixedFooter_ef3116,
+.unreadMentionsIndicatorTop_ef3116 
+{display: none;}
+
+/* brighter placeholder text*/
+div[class*="channelTextArea"] [class*="placeholder"] {
+    color: var(--text-muted) !important;
+}
+
+/* custom/no app title */
+.title_c38106 {
+  visibility: hidden;
+  background-color: #06080a;
+}
+.title_c38106:after {
+  content:'the bass pro pyramid in memphis tenessee that has been converted into a full spectrum propaganda tower flooding the airways with npc slop calibrated to keep the masses unintelligent'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+  color: var(--text-muted)!important;
+  padding: 5px;
+  top: 2px;
+}
+
+/* lighter dark role colours */
+[style^="color: rgb(5, 0, 5);"] /* color chan black */ {
+    [class*=username_]& {
+        [id^=chat-messages]:hover &, /* chat messages */
+        [class^=member_]:hover &, /* members list */
+        [class^=membersGroup_]:hover &  /* members list headers (RoleColorEverywhere plugin) */ {
+            color: var(--text-normal) !important;
+        }
+    }
+    .mention&:hover /* mentions */,
+    [class^=channelTextArea_] [class^=wrapper_]&:hover /* mentions in chat bar */ {
+        color: var(--text-normal) !important;
+        background-color: color-mix(in srgb, var(--text-normal) 20%, transparent) !important;
+    }
+}
+
+/*      old text bar thing         */
+/* revert typing bubbles position */
+.align-chat-input .inTextChannel_b88801.base_b88801 {
+    bottom: 1px;
+    top: auto;
+}
+.align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
+    margin-left: 10px;
+}
+.align-chat-input .inTextChannel_b88801 .text_b88801 {
+    margin-left: 4px;
+}
+
+/* move chat back down to usual position */
+.scrollerSpacer__36d07 {
+    height: 28px !important;
+}
+
+/* revert color of typing username */
+.align-chat-input .inTextChannel_b88801 .text_b88801>strong {
+    color: var(--text-secondary);
+}
+
+/* remove weird gradient thing */
+.chatTypingGradientAtBottom__36d07 {
+    display: none;
+}
+.chatTypingGradientNotAtBottom__36d07 {
+    display: none;
+}
+
+/*    custom chat bar input text    */
+/* default prompt */
+:root{
+    --prompt-text: "spread propaganda";
+}
+
+/* prompt in channels you dont have permission to talk in */
+[class*=channelTextAreaDisabled] {
+    display: none;
+}
+
+/* hide existing text */
+[class*=placeholder][class*=slateTextArea] {visibility: hidden;}
+
+/* add custom text */
+[class*=placeholder][class*=slateTextArea]::before {visibility: visible;content: var(--prompt-text); /*dont break your quotes :3*/}
+
+
+/* better search bar */
+.search__97492 > .searchBar__97492 {
+    width: 32px !important;
+}
+
+.search__97492 > .searchBar__97492 .DraftEditor-root {
+    padding-right: 3px !important
+}
+
+.search__97492.open__97492 > .searchBar__97492 {
+    width: 244px !important;
+}
+
+.search__97492 > .searchBar__97492 .icon__97492 {
+    margin-right: 7px;
+}

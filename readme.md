@@ -1,0 +1,1 @@
+collection of css for vencord. most is sourced and modified from https://discord.com/channels/1015060230222131221/1028106818368589824. mostly for me so i can have a non 400 line quickcss file lmao
