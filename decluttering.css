@@ -5,10 +5,6 @@
     
     --customFont: 'gg sans', sans-serif;
     --bg-color: var(--background-gradient-high, var(--background-base-lowest));
-
-    --panel-gap: 8px;
-    --panel-radius: 10px;
-    --panel-color: var(--background-gradient-highest, var(--background-base-low));
 }
 
 
