@@ -1,4 +1,8 @@
 :root {
+    --panel-gap: 8px;
+    --panel-radius: 10px;
+    --panel-color: rgb(8, 10, 12);
+    
     --spotify-image-blur: 4px;
     --spotify-image-opacity: 0.45;
     --spotify-image-hover-opacity: 0.7;
@@ -10,9 +14,8 @@
     --grabber-height: 0.4;
 }
 
-
 /* custom panel section, its realllllllllly long */
- ._5e434347c823b592-panels {
+ .panels__5e434 {
   display: flex;
   flex-direction: column;
   gap: var(--panel-gap);
