@@ -196,5 +196,6 @@
   padding-top: 0;
   border-width: 0;
   overflow: hidden;
+  display: none;
 }
 
