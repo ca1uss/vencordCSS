@@ -49,6 +49,7 @@ div[class*="channelTextArea"] [class*="placeholder"] {
   visibility: hidden;
   background-color: #06080a;
 }
+
 .title_c38106:after {
   content:'the bass pro pyramid in memphis tenessee that has been converted into a full spectrum propaganda tower flooding the airways with npc slop calibrated to keep the masses unintelligent'; 
   visibility: visible;
@@ -76,23 +77,6 @@ div[class*="channelTextArea"] [class*="placeholder"] {
 }
 
 /*      old text bar thing         */
-/* revert typing bubbles position */
-.align-chat-input .inTextChannel_b88801.base_b88801 {
-    bottom: 1px;
-    top: auto;
-}
-.align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
-    margin-left: 10px;
-}
-.align-chat-input .inTextChannel_b88801 .text_b88801 {
-    margin-left: 4px;
-}
-
-/* move chat back down to usual position */
-.scrollerSpacer__36d07 {
-    height: 28px !important;
-}
-
 /* revert color of typing username */
 .align-chat-input .inTextChannel_b88801 .text_b88801>strong {
     color: var(--text-secondary);
