@@ -148,3 +148,11 @@
   font-size: 20px !important;
   background-color: rgb(27, 27, 27) !important;
 }
+
+.wrapper_e131a9:not(:has(.actionButtons_e131a9)) {
+  max-height: 0;
+  padding-top: 0;
+  border-width: 0;
+  overflow: hidden;
+  display: none; 
+}
