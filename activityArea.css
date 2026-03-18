@@ -116,11 +116,6 @@
   font-size: 16px;
 } 
 
-.wrapper_e131a9,
-.actionButtons_e131a9 {
-  will-change: transform, max-height, opacity;
-}
-
 .wrapper_e131a9 {
   order: var(--order-voice);
   background-color: #080a0c !important;
@@ -131,10 +126,7 @@
   flex-direction: column;
   position: relative;
 
-  padding: 4px 0 2px 0;
-  transition:
-    padding-top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.2s ease;
+  padding: 4px 0 4px 0;
 }
 
 .container_e131a9 {
@@ -145,56 +137,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
+  gap: 4px;
   position: relative;
 }
 
-.voiceButtonsContainer_e131a9 {
-  transform: translateY(0px);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.wrapper_e131a9:hover .voiceButtonsContainer_e131a9 {
-  transform: translateY(15px);
-}
-
-.actionButtons_e131a9 {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  gap: 8px;
-  overflow: hidden;
-
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-4px);
-
-  pointer-events: none;
-
-  transition: 
-    max-height 0.25s cubic-bezier(0.4,0,0.2,1),
-    opacity 0.15s ease 0.05s,
-    transform 0.25s cubic-bezier(0.4,0,0.2,1);
-}
-
-.wrapper_e131a9:hover .actionButtons_e131a9 {
-  max-height: 50px;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: all;
-}
 
 .button_e131a9 {
-  width: 60px;
+  width: 75px;
   padding: 6px;
   font-size: 20px !important;
+  background-color: rgb(27, 27, 27) !important;
 }
-
-.wrapper_e131a9:not(:has(.actionButtons_e131a9)) {
-  max-height: 0;
-  padding-top: 0;
-  border-width: 0;
-  overflow: hidden;
-  display: none; 
-}
-
