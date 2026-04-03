@@ -1,15 +1,3 @@
-/* not mine */
-/* @import url(https://ukriu.github.io/cssCord/Other/noDistractions.css); */
-@import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css);
-/* @import url(https://raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css); */
-/* @import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css); */
-@import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/otherPplsStuff.css);
-
-/* mine */
-@import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/decluttering.css);
-/* @import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/activityArea.css); */
-
-
 :root {
     --panel-gap: 8px;
     --panel-radius: 10px;
