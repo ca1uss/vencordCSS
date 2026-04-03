@@ -1,3 +1,15 @@
+/* not mine */
+/* @import url(https://ukriu.github.io/cssCord/Other/noDistractions.css); */
+@import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Context%20Menu/ChatContextMenuSource.css);
+/* @import url(https://raw.githubusercontent.com/CeaAPI/vencord-snippets/main/CompactSidebarButtons/CompactSidebarButtons.css); */
+/* @import url(https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css); */
+@import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/otherPplsStuff.css);
+
+/* mine */
+@import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/decluttering.css);
+/* @import url(https://raw.githubusercontent.com/ca1uss/vencordCSS/refs/heads/main/activityArea.css); */
+
+
 :root {
     --panel-gap: 8px;
     --panel-radius: 10px;
@@ -125,14 +137,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-
-  padding: 4px 0 4px 0;
+  padding: 4px 0px 4px 0;
 }
 
 .container_e131a9 {
   min-height: 52px;
   height: auto;
-  padding: 0 12px;
+  padding: 0 4px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -140,7 +151,6 @@
   gap: 4px;
   position: relative;
 }
-
 
 .button_e131a9 {
   width: 75px;
@@ -156,3 +166,5 @@
   overflow: hidden;
   display: none; 
 }
+
+
