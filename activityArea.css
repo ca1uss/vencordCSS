@@ -136,13 +136,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   position: relative;
 }
 
 .button_e131a9 {
-  width: 75px;
-  padding: 6px;
+  width: 78px;
+  padding: 4px;
   font-size: 20px !important;
   background-color: rgb(27, 27, 27) !important;
 }
@@ -154,5 +154,3 @@
   overflow: hidden;
   display: none; 
 }
-
-
