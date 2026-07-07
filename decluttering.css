@@ -91,3 +91,7 @@ div[aria-label="Send a gift"],
 ._23977d5b7cef7361-reaction {
   color: var(--text-muted); 
 }
+
+.container__7aaec {
+  display: none !important;
+}
