@@ -123,9 +123,9 @@
   border: 1px solid var(--border-subtle);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   position: relative;
   padding: 4px 0px 4px 0;
+  
 }
 
 .container_e131a9 {
@@ -133,15 +133,17 @@
   height: auto;
   padding: 0 4px;
   border: none;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
   position: relative;
+  display: flex; 
+  flex: 1;
+  width: 100% !important;
 }
 
 .button_e131a9 {
-  width: 78px;
+  flex: 1;
   padding: 4px;
   font-size: 20px !important;
   background-color: rgb(27, 27, 27) !important;
@@ -151,6 +153,6 @@
   max-height: 0;
   padding-top: 0;
   border-width: 0;
+  display: none;
   overflow: hidden;
-  display: none; 
 }
